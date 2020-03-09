@@ -1,0 +1,172 @@
+<style>
+@media( max-width: 600px){
+  p{
+    font: size 1.25rem;
+  }
+}
+@media( max-width: 800px){
+  p{
+    font: size 1.5rem;
+  }
+}
+#navbar{
+  background-color:#77b18a;
+  color:white;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+
+}
+nav{
+  display:block;
+}
+  
+nav ul{
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style:none;
+}
+
+nav li{
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-top:30px;
+  padding-bottom:30px;
+  border: solid 2px;
+  border-color:white;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body{
+  background-color:white;
+  color:#77b18a;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  #h1{
+    padding-top: 0px;
+  }
+  header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
+  #header{
+     padding-bottom:20px;
+     color:white;
+     text-align: center;
+  }
+  #div{
+    background-color:#77b18a;
+    width:800px;
+    margin:auto;
+    padding-left: 400px;
+    padding-right: 200px;
+    color:white;
+  }
+</style>
+
+
+<html>
+  
+    <head>
+      <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=2 initial-scale=1">
+    </head>
+    <title>Technical document page</title>
+        <nav id="navbar">
+            <header id="header">Everything you need to know</header>
+            <ul>
+                <li><a class="nav-link" href="#JavaScript" >JavaScript </a>
+                </li>
+                <li><a class="nav-link" href="#Codes" >Codes</a>
+                </li>
+                <li><a class="nav-link" href="#Variables" >Variables</a>
+                </li>
+                <li><a class="nav-link" href="#Knowledge" >Knowledge</a>
+                </li>
+                <li><a class="nav-link" href="#Declaring_variables" >Declaring variables</a>
+                </li>
+            </ul>
+        </nav>
+    <div id="div"><main id="main-doc">
+           
+        <h1 id="h1">Technical document</h1>
+        <h2>Introduction</h2>
+           
+    <section class="main-section" id="JavaScript">
+    <header>JavaScript</header>
+    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+    </section>
+
+    <section class="main-section" id="Codes">
+    <header>Codes</header>
+    <article>
+      <p>Before starting this module, you don't need any previous JavaScript knowledge, but you should have some familiarity with HTML and CSS.</p>
+      <pre><code class="css">    
+       body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+      }</code></pre>
+        
+    </article>
+    <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+    <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>
+      <p>Declaring Variables: You can declare a variable in three ways:
+        With the keyword var. For example</p>
+      <pre><code class="css">      var x = 42.
+      x = 42.
+       let y = 13.
+      }</code></pre>  
+    </article>
+    <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+    </section>
+
+    <section class="main-section" id="Knowledge">
+    <header>Knowledge</header>
+    <p>What you should know:</p>
+    <ul>
+    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript</li>
+    <li>Six data types that are primitives</li>
+    <li>and Object</li>
+    </ul>
+    <p><code>var x = 42.</code></p>
+    </section>
+        
+    <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+      <code>function greetMe(yourName) { alert("Hello " + yourName); }
+        greetMe("World");
+        </code>
+    </article>
+    <p><code> let y = 13.</code></p>
+    <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+    <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+    </section>
+    </main>
+    </div>
+ 
+    <body>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+    </body>
+
+</html>
